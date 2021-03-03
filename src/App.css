@@ -38,10 +38,32 @@
 }
 
 a { 
-  margin: 10px;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
   background-color: palevioletred;
   color: black;
   padding: 10px;
 
+}
+
+.header{ 
+  background-color: cadetblue;
+  height: 150px;
+}
+
+.todo {
+  border: solid 1px black;
+  border-radius: 5px;
+  width: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.todo:hover {
+  background-color: cadetblue;
+}
+
+.completed {
+  text-decoration: line-through;
 }

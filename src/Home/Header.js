@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { NavLink, withRouter } from 'react-router-dom'
+import '../App.css'
 
 
 export default withRouter (class Header extends Component {
@@ -32,7 +33,7 @@ export default withRouter (class Header extends Component {
                   Todo-List
               </NavLink>
               }
-
+    
           </div>
         )
     }
