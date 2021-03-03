@@ -10,7 +10,7 @@ export default class SignUpPage extends Component {
 
 
     handleEmailChange = (e) => { 
-
+        // console.log(e.target.value)
         this.setState({ 
             email: e.target.value
         })
@@ -25,7 +25,7 @@ export default class SignUpPage extends Component {
 
     handleSubmitButton = async (e) => { 
         e.preventDefault();
-        console.log(e.target[0].value)
+        console.log(this.state)
         const user = await signUpNewUser(this.state.email, this.state.password);
 
         this.props.handleUserChange(user); //getting the state from App.js and putting the user in localStorage

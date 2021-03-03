@@ -6,15 +6,20 @@ export function addUserToLocalStorage(user) {
 
 
 export function getUserFromLocalStorage() { 
-    const user = localStorage.getItem(USER);
+    let user = localStorage.getItem(USER);
+    user = JSON.parse(user);
 
-    if (user && user.token) return JSON.parse(user);
-
-    return { 
-        email: '',
-        password: '',
-        token: ''
+    if (user && user.token){
+        return user;
+    } else{
+        return { 
+            email: '',
+            password: '',
+            token: ''
+        }
     }
+
+    
 
 }
 

@@ -12,3 +12,11 @@ export async function signUpNewUser(email, password) {
     return response.body;
 
 }
+
+export async function getTodoList(token) { 
+
+    const response = await request.get(`${URL}/api/todoList`)
+        .set('Authorization', token)
+
+        return response.body;
+}

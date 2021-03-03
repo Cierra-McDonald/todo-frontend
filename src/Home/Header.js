@@ -7,7 +7,7 @@ export default withRouter (class Header extends Component {
         return (
             
              <div className="header">
-             Todo-List!
+           
              {
                   this.props.location.pathname !== '/'
                       &&<NavLink exact activeClassName="selected" to="/" className="nav-link">
